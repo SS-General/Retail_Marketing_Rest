@@ -1,42 +1,47 @@
-######################
-# Project Specific
-######################
-/src/main/webapp/dist
-ui/
-/src/main/webapp/bower_components
+### SVN ###
+**/.svn/
 
-######################
-# Node
-######################
-/node/**
-/node_modules/**
+### Java ###
+**/*.class
+build/
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
 
-######################
-# SASS
-######################
-.sass-cache/**
+# Package Files (any location)#
+# Must explicitly override in a .gitignore file in a sub directory (this is discouraged)
+# package files should be in nexus or built as a target from source
+#**/*.jar
+**/*.war
+**/*.ear
 
-######################
-# Eclipse
-######################
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+### Eclipse ###
 *.pydevproject
-.project
 .metadata
-/bin/**
-/tmp/**
-/tmp/**/*
-*.tmp
-*.bak
-*.swp
-*~.nib
+.gradle
+bin/
+tmp/
+
+#intellij
+.idea/
+*.iml
+
+# Exclude these in root and all folders below
+**/*.tmp
+**/*.bak
+**/*.swp
+**/*~.nib
+
 local.properties
-.classpath
-.settings/**
+.settings/
 .loadpath
-/src/main/resources/rebel.xml
+.project
+.classpath
 
 # External tool builders
-.externalToolBuilders/**
+.externalToolBuilders/
 
 # Locally stored "Eclipse launch configurations"
 *.launch
@@ -47,79 +52,19 @@ local.properties
 # PDT-specific
 .buildpath
 
-######################
-# Intellij
-######################
-.idea/**
-*.iml
-*.iws
-*.ipr
-*.ids
-*.orig
+# sbteclipse plugin 
+.target
 
-######################
-# Maven
-######################
-/log/**
-/target/**
+# TeXlipse plugin
+.texlipse
 
-######################
-# Gradle
-######################
-.gradle/**
-gradle-app.setting
-######################
-# Package Files
-######################
-*.jar
-*.war
-*.ear
-*.db
-
-######################
-# Windows
-######################
-# Windows image file caches
-Thumbs.db
-
-# Folder config file
-Desktop.ini
-
-######################
-# Mac OSX
-######################
-.DS_Store
-.svn
-
-# Thumbnails
-._*
-
-# Files that might appear on external disk
-.Spotlight-V100
-.Trashes
-
-######################
-# Directories
-######################
-/build/**
-/bin/**
-/spring_loaded/**
-/deploy/**
-
-######################
-# Logs
-######################
-*.log
-
-######################
-# Others
-######################
-*.class
-*.*~
-*~
-.merge_file*
-
-######################
-# Gradle Wrapper
-######################
-!gradle/wrapper/gradle-wrapper.jar
+### Maven ###
+# Default maven target build files
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+po-services
+common/target*

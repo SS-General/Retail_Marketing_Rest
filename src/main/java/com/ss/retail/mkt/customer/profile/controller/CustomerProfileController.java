@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class CustomerProfileController {
-    
+	
     @RequestMapping("/register/customer")
     public String registerCustomer() {
         return "Retail Market Welcomes You!";

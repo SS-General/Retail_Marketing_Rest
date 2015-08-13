@@ -35,6 +35,8 @@ dependencies {
     // tag::tests[]
     testCompile("org.springframework.boot:spring-boot-starter-test")
     // end::tests[]
+	compile 'com.parse.bolts:bolts-android:1.2.1'
+	compile fileTree(dir: 'libs', include: 'Parse-*.jar')
 }
 
 task wrapper(type: Wrapper) {
